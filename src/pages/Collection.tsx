@@ -11,7 +11,7 @@ const Collection = () => {
 		[],
 	);
   const [category,setCategory] = useState<typeof products>([]);
-  const [subCategory,setSubCategory] = useState<typeof products>([]);
+  // const [subCategory,setSubCategory] = useState<typeof products>([]);
   
   const toggleCategory = (e: React.ChangeEvent<HTMLInputElement>) => {
 	if(category.includes((e.target as HTMLInputElement).value)){
