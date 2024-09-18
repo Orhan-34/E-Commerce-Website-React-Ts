@@ -1,9 +1,11 @@
 import { NavLink } from "react-router-dom";
 import { assets } from "../assets/assets";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
 	const [visibility, setVisibility] = useState(false);
+	const { setShowSearch, showSearch, getCartTotal } = useContext(ShopContext);
 	return (
 		<div className="flex items-center justify-between font-medium py-5">
 			<NavLink to="/">
@@ -37,10 +39,12 @@ const Navbar = () => {
 				</NavLink>
 			</ul>
 			<div className="flex items-center gap-6">
+				{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
 				<img
 					src={assets.search_icon}
 					alt="search-icon"
-					className="w-5 cursor-pointer"
+					className={`w-5 ${showSearch ? "cursor-pointer" : ""}`}
+					onClick={() => setShowSearch(!showSearch)}
 				/>
 				<div className="group relative">
 					<img
@@ -65,7 +69,7 @@ const Navbar = () => {
 						className="w-5 min-w-5 cursor-pointer"
 					/>
 					<p className="w-4 text-center leading-4 bg-black text-white aspect-square rounded-full absolute text-[8px] right-[-5px] bottom-[-5px]">
-						7
+						{getCartTotal()}
 					</p>
 				</NavLink>
 				{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
