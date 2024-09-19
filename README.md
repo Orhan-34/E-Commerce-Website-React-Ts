@@ -1,50 +1,12 @@
-# React + TypeScript + Vite
+# E-commerce FullStack Website (React+Vite -TypeScript-TailwindCSS)
+## Home Page
+<img width="1792" alt="Ekran Resmi 2024-09-19 15 29 18" src="https://github.com/user-attachments/assets/52b1c057-12df-407a-aca7-0f9366526fa6">
+<img width="1792" alt="Ekran Resmi 2024-09-19 15 31 29" src="https://github.com/user-attachments/assets/5723c5ae-6b90-4b3c-b6c2-5e022b71eca4">
+<img width="1792" alt="Ekran Resmi 2024-09-19 15 31 21" src="https://github.com/user-attachments/assets/c74a10a8-4e3d-4b5e-bdae-6308d3d12d63">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Collection Page 
+<img width="1792" alt="Ekran Resmi 2024-09-19 15 25 23" src="https://github.com/user-attachments/assets/f714af9e-b8c7-4adc-9d31-0863b5c9d990">
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Collection Page When use filter
+<img width="1792" alt="Ekran Resmi 2024-09-19 15 25 23" src="https://github.com/user-attachments/assets/6b010830-41bd-46d2-87a2-e8386ab0fb86">
+<img width="1792" alt="Ekran Resmi 2024-09-19 15 31 49" src="https://github.com/user-attachments/assets/8b4a76a2-5155-42cc-b6db-b1cd49a62510">
