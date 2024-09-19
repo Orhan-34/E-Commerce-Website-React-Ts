@@ -10,7 +10,7 @@
 ### Collection Page When use filter
 <img width="1792" alt="Ekran Resmi 2024-09-19 15 31 49" src="https://github.com/user-attachments/assets/8b4a76a2-5155-42cc-b6db-b1cd49a62510">
 
-### When click cart items 
+### When Click Cart Items 
 <img width="1792" alt="Ekran Resmi 2024-09-19 15 32 20" src="https://github.com/user-attachments/assets/03e5bb12-3993-448f-a0a4-296b1034cad2">
 
 ### Order's Page
