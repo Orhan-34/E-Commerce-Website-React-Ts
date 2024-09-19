@@ -34,6 +34,8 @@ interface ShopContextType {
 	getCartTotal: () => number;
 
 	updateQuantity: (itemId: string, size: string, quantity: number) => void;
+
+	getCartAmount: () => Promise<number>;	
 }
 
 export const ShopContext = createContext<ShopContextType>({
@@ -60,6 +62,8 @@ export const ShopContext = createContext<ShopContextType>({
 	getCartTotal: () => 0,
 
 	updateQuantity: () => {},
+
+	getCartAmount: async() => 0,
 });
 
 const ShopContextProvider = (props: ShopContextPropsType) => {
@@ -118,6 +122,27 @@ const ShopContextProvider = (props: ShopContextPropsType) => {
 		setCartItems(cartData);
 	};
 
+
+	const getCartAmount = async() => {
+		let totalAmount = 0;
+		for (const items in cartItems) {
+			const itemInfo = products.find((item) => item._id === items);
+			for(const item in cartItems[items]){
+				try{
+					if(cartItems[items][item] > 0){
+						if (itemInfo) {
+							totalAmount += itemInfo.price * cartItems[items][item];
+						}
+					}
+				}
+				catch(e){
+					console.log(e);
+				}
+			}			
+		}
+		return totalAmount;
+	}
+
 	const value = {
 		products,
 		delivery_fee,
@@ -130,7 +155,8 @@ const ShopContextProvider = (props: ShopContextPropsType) => {
 		setCartItems,
 		addToCart,
 		getCartTotal,
-		updateQuantity
+		updateQuantity,
+		getCartAmount
 	};
 
 	return (
