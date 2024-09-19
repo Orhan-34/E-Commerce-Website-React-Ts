@@ -1,4 +1,4 @@
-# E-commerce FullStack Website (React+Vite -TypeScript-TailwindCSS)
+# E-commerce FullStack Website (React & Vite - TypeScript - TailwindCSS)
 ## Home Page
 <img width="1792" alt="Ekran Resmi 2024-09-19 15 29 18" src="https://github.com/user-attachments/assets/52b1c057-12df-407a-aca7-0f9366526fa6">
 <img width="1792" alt="Ekran Resmi 2024-09-19 15 31 29" src="https://github.com/user-attachments/assets/5723c5ae-6b90-4b3c-b6c2-5e022b71eca4">
