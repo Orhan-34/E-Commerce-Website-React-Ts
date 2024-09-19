@@ -22,8 +22,8 @@
 ### Contact Us Page
 <img width="1792" alt="Ekran Resmi 2024-09-19 15 32 04" src="https://github.com/user-attachments/assets/abe6f980-e98a-48f7-8343-fc6264c927cf">
 
-### Login Page
+### Sign Up Page
 <img width="1792" alt="Ekran Resmi 2024-09-19 15 33 02" src="https://github.com/user-attachments/assets/e19aeae3-885d-4e94-9486-f09313d35a26">
 
-### Sign Up Page
+### Login Page
 <img width="1792" alt="Ekran Resmi 2024-09-19 15 33 06" src="https://github.com/user-attachments/assets/a3dd3a8d-d52c-4349-b22b-f4beccad9fb4">
